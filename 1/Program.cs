@@ -26,14 +26,13 @@ searchSymbols(mass);
 void searchSymbols (string [] mass)
 {
     Console.Write("Массив после преобразования - [");
-    for (int i = 0; i < mass.Length - 1; i++)
+    for (int i = 0; i < mass.Count(); i++)
     {
         if (mass[i].Length <= 3)
         {
         Console.Write($"{mass[i]}, ");  
         }
     }
-    Console.Write($"{mass[mass.Length - 1]}");
     Console.Write("]");
 }
 Console.WriteLine();
